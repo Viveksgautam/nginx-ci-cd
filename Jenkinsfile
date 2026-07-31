@@ -9,6 +9,7 @@ pipeline{
                 cd nginx-ci-cd
                 docker build -t vivek .
                 docker run -d --name vivek -p 1234:80 vivek
+                
                 '''
             }
         }
